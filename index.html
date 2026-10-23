@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Una base informativa per orientarsi tra percorsi di ascolto, supporto e risorse per le persone."
+    >
+    <meta name="theme-color" content="#f5f3ed">
+    <title>Insieme, un passo alla volta</title>
+    <link rel="stylesheet" href="app/assets/styles.css">
+    <script src="app/assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+    <details class="emergency-panel">
+      <summary><span aria-hidden="true">!</span> Aiuto immediato</summary>
+      <div class="emergency-content">
+        <p class="eyebrow">Se sei in pericolo</p>
+        <p>In caso di pericolo immediato chiama il <strong>112</strong>. Se puoi, spostati in un luogo sicuro.</p>
+        <a class="emergency-call" href="tel:112">Chiama il 112 <span aria-hidden="true">↗</span></a>
+        <div class="emergency-line">
+          <strong>1522</strong>
+          <span>Supporto per violenza e stalking. Gratuito, attivo 24 ore su 24.</span>
+          <a href="tel:1522">Chiama il 1522</a>
+          <a href="https://www.1522.eu/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span class="visually-hidden">(si apre in una nuova scheda)</span> ↗</a>
+        </div>
+        <div class="emergency-line">
+          <strong>Telefono Amico Italia</strong>
+          <span>Ascolto telefonico per momenti di difficoltà emotiva. Tutti i giorni, 24 ore su 24.</span>
+          <a href="tel:0223272327">Chiama 02 2327 2327</a>
+          <a href="https://www.telefonoamico.it/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span class="visually-hidden">(si apre in una nuova scheda)</span> ↗</a>
+        </div>
+        <p class="emergency-note">Per trovare un pronto soccorso vicino, usa una mappa affidabile o chiedi al 112. Questo sito non conosce la tua posizione e non verifica i presidi locali. Se non sei in Italia, contatta i servizi di emergenza del luogo in cui ti trovi.</p>
+      </div>
+    </details>
+    <button class="safe-exit" id="safe-exit" type="button" aria-label="Uscita rapida: sostituisce questa pagina con una pagina vuota" hidden>Uscita rapida <span aria-hidden="true">×</span></button>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inizio" aria-label="Insieme, un passo alla volta - pagina iniziale">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 34S5 25.5 5 15.8C5 10.6 8.6 7 13.1 7c3.1 0 5.4 1.8 6.9 4.2C21.5 8.8 23.8 7 26.9 7 31.4 7 35 10.6 35 15.8 35 25.5 20 34 20 34Z" />
+              <path d="M12 20h5l2-4 3 8 2-4h4" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Insieme</strong>
+            <span>un passo alla volta</span>
+          </span>
+        </a>
+
+        <span class="app-status"><span aria-hidden="true"></span> Versione iniziale</span>
+
+        <details class="nav-menu" open>
+          <summary aria-label="Apri il menu di navigazione">
+            <span></span><span></span><span class="visually-hidden">Menu</span>
+          </summary>
+          <nav aria-label="Navigazione secondaria">
+            <a href="#approccio">Il nostro approccio</a>
+            <a href="#ambiti">Aree di supporto</a>
+            <a href="#assistente">Chat interna</a>
+            <a href="#faq">Domande frequenti</a>
+            <a class="nav-contact" href="#contatti">Contatti <span aria-hidden="true">↗</span></a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="contenuto">
+      <section class="hero section-wrap" id="inizio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Benvenuta, benvenuto</p>
+          <h1 id="hero-title">Da dove vuoi iniziare? <em>Con calma.</em></h1>
+          <p class="hero-intro">
+            Esplora le aree di supporto o consulta le risposte più frequenti.
+            Le informazioni sui servizi del territorio sono in fase di definizione.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#ambiti">Scopri le aree di supporto <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#faq">Vai alle domande frequenti <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note"><span aria-hidden="true">✳</span> Non serve inserire dati personali per consultare questa pagina.</p>
+        </div>
+
+        <div class="hero-art" aria-label="Illustrazione astratta di persone vicine e in dialogo" role="img">
+          <div class="art-sun"></div>
+          <div class="art-note note-top"><span>uno spazio</span><span>per te</span></div>
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-person person-one"><span class="person-head"></span><span class="person-body"></span></div>
+          <div class="art-person person-two"><span class="person-head"></span><span class="person-body"></span></div>
+          <div class="art-person person-three"><span class="person-head"></span><span class="person-body"></span></div>
+          <div class="art-leaf leaf-one"></div>
+          <div class="art-leaf leaf-two"></div>
+          <div class="art-note note-bottom"><span>Insieme,</span><strong>si può.</strong></div>
+          <span class="art-star star-one" aria-hidden="true">✳</span>
+          <span class="art-star star-two" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="approach section-wrap" id="approccio" aria-labelledby="approach-title">
+        <div class="section-heading">
+          <p class="eyebrow">Un punto di partenza</p>
+          <h2 id="approach-title">Prima di tutto,<br><em>una persona.</em></h2>
+        </div>
+        <div class="approach-copy">
+          <p>
+            Chiedere aiuto può essere difficile. Per questo vogliamo rendere più semplice
+            trovare le informazioni giuste, conoscere le possibilità e scegliere con calma
+            il prossimo passo.
+          </p>
+          <p class="muted">
+            Questo spazio è in costruzione: i contenuti e le risorse saranno definiti
+            insieme, a partire dai bisogni delle persone e del territorio.
+          </p>
+          <a class="text-link" href="#contatti">Conosciamoci <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="assistant-section" id="assistente" aria-labelledby="assistant-title">
+        <div class="section-wrap">
+          <div class="assistant-card">
+            <div class="assistant-heading">
+              <span class="assistant-avatar" aria-hidden="true">i</span>
+              <div>
+                <p class="eyebrow">Chat interna di orientamento</p>
+                <h2 id="assistant-title">Da dove vuoi partire?</h2>
+              </div>
+              <span class="assistant-badge">Demo locale</span>
+            </div>
+            <p class="assistant-disclaimer">La conversazione si svolge qui nell'app. Questo prototipo usa risposte predefinite: non è collegato a un modello di intelligenza artificiale, a un operatore o ad altri utenti. Non sostituisce servizi di emergenza o professionisti.</p>
+            <div class="assistant-thread" id="assistant-messages" role="log" aria-live="polite" aria-relevant="additions">
+              <p class="assistant-message assistant-reply">Ciao. Posso aiutarti a trovare le informazioni presenti in questa pagina. Scegli un argomento qui sotto; non inserire nomi o dettagli personali.</p>
+            </div>
+            <div class="assistant-actions" aria-label="Scegli un argomento">
+              <button type="button" data-assistant-topic="urgent">Mi serve aiuto subito</button>
+              <button type="button" data-assistant-topic="talk">Vorrei parlare con qualcuno</button>
+              <button type="button" data-assistant-topic="peers">Vorrei parlare con altre persone</button>
+              <button type="button" data-assistant-topic="start">Non so da dove iniziare</button>
+              <button type="button" data-assistant-topic="privacy">Come funziona la riservatezza?</button>
+            </div>
+            <p class="assistant-footnote">Le risposte predefinite sono mostrate in questa scheda, non inviate né salvate. Non ci sono chat attive con altre persone. Se c’è un pericolo immediato, chiama il 112.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="support" id="ambiti" aria-labelledby="support-title">
+        <div class="section-wrap">
+          <div class="support-heading">
+            <div>
+              <p class="eyebrow">Aree di supporto</p>
+              <h2 id="support-title">Un aiuto che parte<br>da ciò che ti serve.</h2>
+            </div>
+            <p>Ogni situazione è diversa. Gli ambiti qui sotto sono una prima traccia, da completare con le informazioni specifiche.</p>
+          </div>
+          <div class="support-cards">
+            <article class="support-card">
+              <span class="card-number">01</span>
+              <span class="card-icon icon-conversation" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M8 11.5A5.5 5.5 0 0 1 13.5 6h21a5.5 5.5 0 0 1 5.5 5.5v13a5.5 5.5 0 0 1-5.5 5.5h-12L14 38v-8.3a5.5 5.5 0 0 1-6-5.2v-13Z"/><path d="M16 16h16M16 22h11"/></svg>
+              </span>
+              <h3>Ascolto e orientamento</h3>
+              <p>Uno spazio per raccontare ciò che stai vivendo e iniziare a individuare possibili direzioni.</p>
+              <a class="card-action" href="#assistente" data-assistant-topic="talk">Esplora la chat demo <span aria-hidden="true">↗</span></a>
+              <span class="card-status">Contenuto da definire</span>
+            </article>
+            <article class="support-card">
+              <span class="card-number">02</span>
+              <span class="card-icon icon-path" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="11" cy="35" r="4"/><circle cx="24" cy="23" r="4"/><circle cx="37" cy="12" r="4"/><path d="m14 32 7-6m6-6 7-5"/></svg>
+              </span>
+              <h3>Passi concreti</h3>
+              <p>Informazioni per conoscere le risorse disponibili e capire quali possono essere adatte alla tua situazione.</p>
+              <a class="card-action" href="#assistente" data-assistant-topic="start">Scopri da dove iniziare <span aria-hidden="true">↗</span></a>
+              <span class="card-status">Contenuto da definire</span>
+            </article>
+            <article class="support-card">
+              <span class="card-number">03</span>
+              <span class="card-icon icon-community" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="15" r="6"/><circle cx="11" cy="21" r="4"/><circle cx="37" cy="21" r="4"/><path d="M11 39v-4a8 8 0 0 1 8-8h10a8 8 0 0 1 8 8v4M3 38v-3a6 6 0 0 1 6-6h2m34 9v-3a6 6 0 0 0-6-6h-2"/></svg>
+              </span>
+              <h3>Rete e comunità</h3>
+              <p>Un punto di partenza per scoprire le persone e le realtà che possono fare parte del tuo percorso.</p>
+              <a class="card-action" href="#comunita" data-open-community-dialog>Consulta le informazioni <span aria-hidden="true">↗</span></a>
+              <span class="card-status">Contenuto da definire</span>
+            </article>
+          </div>
+          <p class="support-disclaimer">Le aree presentate sono indicative e non descrivono ancora servizi o disponibilità attivi.</p>
+        </div>
+      </section>
+
+      <section class="next-steps section-wrap" id="strumenti" aria-labelledby="next-steps-title">
+        <div class="section-heading">
+          <p class="eyebrow">Orientarsi, con i propri tempi</p>
+          <h2 id="next-steps-title">Strumenti pensati<br>per la tua tranquillità.</h2>
+        </div>
+        <div class="next-steps-intro">
+          <p>Questa prima versione non invia richieste a operatori e non offre servizi di appuntamento o notifiche. Puoi comunque provare le preferenze anonime e i promemoria temporanei: restano solo in questa scheda.</p>
+        </div>
+        <div class="tool-grid">
+          <section class="tool-card privacy-tool" aria-labelledby="profile-title">
+            <span class="tool-index">La tua riservatezza</span>
+            <h3 id="profile-title">Scegli come usare questa pagina</h3>
+            <p>Non serve creare un account. La preferenza vale solo finché tieni aperta questa scheda: non viene inviata né salvata.</p>
+            <fieldset class="reading-size-control" aria-describedby="reading-size-status">
+              <legend>Dimensione del testo</legend>
+              <label><input type="radio" name="reading-size" value="standard" checked> Standard</label>
+              <label><input type="radio" name="reading-size" value="large"> Grande</label>
+              <label><input type="radio" name="reading-size" value="larger"> Molto grande</label>
+            </fieldset>
+            <p class="profile-status" id="reading-size-status" aria-live="polite">Dimensione del testo: standard.</p>
+            <label class="toggle-row" for="anonymous-mode">
+              <span><strong>Modalità anonima</strong><small>Nessun nickname mostrato.</small></span>
+              <input id="anonymous-mode" type="checkbox" checked>
+            </label>
+            <div class="nickname-field" id="nickname-field" hidden>
+              <label for="nickname">Nickname facoltativo</label>
+              <input id="nickname" type="text" maxlength="30" autocomplete="nickname" placeholder="Scegli un nome">
+            </div>
+            <p class="profile-status" id="profile-status" aria-live="polite">Stai usando la pagina in modalità anonima.</p>
+          </section>
+
+          <section class="tool-card reminders-tool" aria-labelledby="reminders-title">
+            <span class="tool-index">Promemoria personali</span>
+            <h3 id="reminders-title">Tieni a mente una data</h3>
+            <p>Aggiungi un promemoria senza dettagli personali. È visibile solo in questa scheda e scompare quando la chiudi; non invia notifiche.</p>
+            <form id="reminder-form" inert>
+              <label for="reminder-label">Promemoria</label>
+              <input id="reminder-label" name="label" type="text" maxlength="80" required placeholder="Es. appuntamento">
+              <label for="reminder-date">Data</label>
+              <input id="reminder-date" name="date" type="date" required>
+              <button class="button button-primary" type="submit">Aggiungi promemoria</button>
+              <p class="form-status" id="reminder-status" aria-live="polite"></p>
+            </form>
+            <ul class="reminder-list" id="reminder-list" aria-label="Promemoria di questa scheda"></ul>
+          </section>
+        </div>
+        <div class="feature-status-grid">
+          <article class="feature-status">
+            <span aria-hidden="true">01</span>
+            <h3>Colloqui e stato delle richieste</h3>
+            <p>Richieste per telefono, video o in presenza e aggiornamenti sul loro stato saranno disponibili solo quando sarà attivato un canale di contatto verificato.</p>
+            <strong>In preparazione</strong>
+          </article>
+          <article class="feature-status">
+            <span aria-hidden="true">02</span>
+            <h3>Opportunità aggiornate</h3>
+            <p>La bacheca verrà popolata solo con opportunità verificate, con fonte e data di aggiornamento. Al momento non sono pubblicati bandi o annunci.</p>
+            <strong>Nessun annuncio pubblicato</strong>
+          </article>
+          <article class="feature-status">
+            <span aria-hidden="true">03</span>
+            <h3>Rete e vicinanza</h3>
+            <p>Elenco delle realtà territoriali e filtro per distanza o area geografica richiedono dati locali confermati, che qui non sono ancora disponibili.</p>
+            <strong>Dati territoriali da definire</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-wrap faq-layout">
+          <div>
+            <p class="eyebrow">Domande frequenti</p>
+            <h2 id="faq-title">Non sai da<br>dove iniziare?</h2>
+            <p class="faq-intro">Risposte chiare, senza fretta. Le informazioni sui servizi locali saranno aggiunte quando saranno confermate.</p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>A chi posso rivolgermi se non ho documenti?</summary>
+              <p>La pagina non è collegata a uno sportello e non può indirizzarti a un servizio locale verificato. In caso di pericolo immediato chiama il 112; per individuare un servizio territoriale puoi chiedere ai servizi sociali del Comune o a un ente di fiducia. I riferimenti locali saranno aggiunti quando confermati.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Il servizio costa qualcosa?</summary>
+              <p>In questa fase non è attivo un servizio di assistenza tramite questo sito, quindi non possiamo indicare costi o gratuità di servizi locali. I recapiti e le condizioni saranno pubblicati solo dopo la conferma dell’ente responsabile.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Chi leggerà quello che scrivo?</summary>
+              <p>Non c’è un modulo di contatto: quello che scrivi nei promemoria resta nella memoria temporanea della scheda e non viene trasmesso dal sito. Non inserire informazioni sensibili. Il tuo dispositivo o browser potrebbe conservare tracce della navigazione.</p>
+            </details>
+            <details class="faq-item">
+              <summary>La modalità anonima cancella la cronologia?</summary>
+              <p>No. Evita di mostrare un nickname in questa pagina, ma non cancella la cronologia del browser, i registri di rete o eventuali schermate. Per la navigazione privata usa le funzioni del tuo browser o dispositivo.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Posso chiedere o prenotare un colloquio da qui?</summary>
+              <p>Non ancora. Questa pagina non invia richieste né permette di prenotare o controllarne lo stato. I moduli saranno attivati solo quando saranno definiti un ente responsabile, recapiti e modalità sicure di gestione.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Dove trovo il pronto soccorso più vicino?</summary>
+              <p>Il sito non conosce la tua posizione e non contiene una mappa verificata dei presidi. In caso di urgenza chiama il 112; altrimenti usa una mappa aggiornata o chiedi indicazioni a un servizio locale.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="community section-wrap" id="comunita" aria-labelledby="community-title">
+        <div>
+          <p class="eyebrow">Rispetto e fiducia</p>
+          <h2 id="community-title">Una rete comincia<br>da come ci ascoltiamo.</h2>
+        </div>
+        <div class="community-copy">
+          <p>Se in futuro saranno attivati spazi condivisi, queste saranno le basi per partecipare:</p>
+          <ul>
+            <li>Ascoltare senza giudicare e rispettare le differenze.</li>
+            <li>Non condividere dati personali, propri o altrui.</li>
+            <li>Rispettare i confini e la riservatezza di ogni persona.</li>
+            <li>Segnalare contenuti offensivi o potenzialmente pericolosi.</li>
+          </ul>
+          <button class="button button-primary community-open" id="open-community-dialog" type="button" aria-haspopup="dialog" data-open-community-dialog>
+            Chat tra persone <span aria-hidden="true">↗</span>
+          </button>
+          <p class="muted">La chat interna non è attiva. Il popup informativo si chiude da solo dopo 12 secondi; puoi riaprirlo qui.</p>
+        </div>
+      </section>
+
+      <dialog class="peer-chat-dialog" id="community-dialog" aria-labelledby="community-dialog-title" aria-describedby="community-dialog-description">
+        <div class="peer-chat-card">
+          <button class="dialog-close" id="close-community-dialog" type="button" aria-label="Chiudi il popup">×</button>
+          <span class="peer-chat-status"><span aria-hidden="true"></span> Non attiva</span>
+          <h2 id="community-dialog-title">Chat tra persone</h2>
+          <p id="community-dialog-description">La chat interna tra utenti non è attiva. L'invito qui sotto porta a un gruppo WhatsApp esterno a questa app. Prima di entrare, verifica chi lo gestisce e ricorda che gli altri partecipanti potrebbero vedere il tuo numero e i tuoi messaggi. Evita di condividere dati personali o informazioni delicate.</p>
+          <a
+            class="peer-chat-link"
+            href="https://chat.whatsapp.com/KJi2Io4ETdDKLx8pp291DD"
+            rel="noopener noreferrer"
+          >Apri il gruppo WhatsApp <span aria-hidden="true">↗</span><span class="visually-hidden">(apre WhatsApp)</span></a>
+          <p class="dialog-footnote">Il collegamento apre WhatsApp, non una chat interna dell'app.</p>
+        </div>
+      </dialog>
+
+      <section class="closing section-wrap" aria-labelledby="closing-title">
+        <div class="closing-mark" aria-hidden="true">
+          <svg viewBox="0 0 72 72" fill="none"><path d="M36 62S8 46.2 8 28.2C8 18.6 14.7 12 23 12c5.8 0 10 3.3 13 7.8C39 15.3 43.2 12 49 12c8.3 0 15 6.6 15 16.2C64 46.2 36 62 36 62Z"/><path d="M19 36h10l4-8 7 16 4-8h10"/></svg>
+        </div>
+        <p class="eyebrow">Il primo passo può essere piccolo</p>
+        <h2 id="closing-title">Non serve avere<br>già tutte le risposte.</h2>
+        <p>Quando i riferimenti saranno pronti, potrai trovare qui come metterti in contatto e chiedere informazioni.</p>
+        <a class="button button-light" href="#contatti">Vai ai contatti <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="contact section-wrap" id="contatti" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Restiamo in contatto</p>
+          <h2 id="contact-title">Uno spazio aperto,<br>da costruire insieme.</h2>
+        </div>
+        <div class="contact-note">
+          <p>Questo sito è una prima bozza informativa: non è gestito da un ente di assistenza e non riceve richieste. I contatti, gli orari e le modalità di accesso saranno inseriti dopo la conferma del progetto e dei referenti.</p>
+          <span class="contact-placeholder">Ente promotore e contatti: da confermare</span>
+        </div>
+      </section>
+    </main>
+
+    <nav class="app-nav" aria-label="Navigazione principale">
+      <a href="#inizio" data-app-nav aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
+        <span>Home</span>
+      </a>
+      <a href="#ambiti" data-app-nav>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
+        <span>Aree</span>
+      </a>
+      <a href="#assistente" data-app-nav>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18.5A8 8 0 1 1 8 21l-4 1z"/><path d="M8 10h8M8 14h5"/></svg>
+        <span>Chat</span>
+      </a>
+      <a href="#strumenti" data-app-nav>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>Strumenti</span>
+      </a>
+      <a href="#faq" data-app-nav>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.4 2.4 0 1 1 4.3 1.5c-1 1.1-2 1.3-2 3"/><path d="M12 17h.01"/></svg>
+        <span>FAQ</span>
+      </a>
+    </nav>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="#inizio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 34S5 25.5 5 15.8C5 10.6 8.6 7 13.1 7c3.1 0 5.4 1.8 6.9 4.2C21.5 8.8 23.8 7 26.9 7 31.4 7 35 10.6 35 15.8 35 25.5 20 34 20 34Z"/><path d="M12 20h5l2-4 3 8 2-4h4"/></svg>
+          </span>
+          <span class="brand-copy"><strong>Insieme</strong><span>un passo alla volta</span></span>
+        </a>
+        <p>Un progetto in costruzione, pensato per le persone.</p>
+        <a class="back-top" href="#inizio">Torna all'inizio <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="footer-bottom">
+        <span>© Insieme</span>
+        <span><a href="#privacy">Privacy e dati</a> · Informazioni in fase di definizione</span>
+      </div>
+    </footer>
+    <section class="legal-note" id="privacy" aria-labelledby="privacy-title">
+      <div class="section-wrap">
+        <h2 id="privacy-title">Privacy, progetto e crediti</h2>
+        <div class="legal-grid">
+          <div>
+            <h3>Informativa provvisoria</h3>
+            <p>Questa versione statica non ha account, moduli di contatto, statistiche o cookie propri. La chat interna usa soltanto pulsanti con risposte predefinite: non è collegata a un modello IA, non accetta testo libero e non invia messaggi a un server. Preferenza anonima e promemoria restano solo nella memoria della scheda. I collegamenti esterni si aprono solo se li scegli. Il browser, il dispositivo o il servizio di rete possono comunque registrare dati tecnici.</p>
+            <p>Queste note non sostituiscono un’informativa GDPR. Prima di attivare servizi o raccogliere dati, il titolare, le finalità, le basi giuridiche, i tempi di conservazione e i diritti delle persone dovranno essere definiti e verificati.</p>
+          </div>
+          <div>
+            <h3>Chi siamo e crediti</h3>
+            <p>Enti promotori, referenti operativi, responsabile del trattamento e contatti tecnici non sono ancora stati indicati e non vengono inventati. Saranno pubblicati quando confermati.</p>
+            <p>Per una situazione urgente, non usare questo sito: chiama il 112.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
