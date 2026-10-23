@@ -11,7 +11,6 @@ const reminderStatus = document.querySelector("#reminder-status");
 const assistantMessages = document.querySelector("#assistant-messages");
 const navMenu = document.querySelector(".nav-menu");
 const communityDialog = document.querySelector("#community-dialog");
-const communityDialogOpener = document.querySelector("#open-community-dialog");
 const communityDialogCloser = document.querySelector("#close-community-dialog");
 const communityDialogTimeout = 12_000;
 const compactNavigation = window.matchMedia("(max-width: 900px)");
@@ -238,9 +237,14 @@ safeExitButton.addEventListener("click", () => {
 });
 safeExitButton.hidden = false;
 
-communityDialogOpener.addEventListener("click", () => {
-  window.clearTimeout(communityDialogAutoOpenTimer);
-  openCommunityDialog();
+document.querySelectorAll("[data-open-community-dialog]").forEach((control) => {
+  control.addEventListener("click", (event) => {
+    window.clearTimeout(communityDialogAutoOpenTimer);
+    openCommunityDialog();
+    if (control instanceof HTMLAnchorElement) {
+      event.preventDefault();
+    }
+  });
 });
 communityDialog.addEventListener("pointerdown", scheduleCommunityDialogClose);
 communityDialog.addEventListener("keydown", scheduleCommunityDialogClose);

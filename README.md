@@ -11,10 +11,11 @@ Apri `index.html` in un browser. Il sito è statico e non richiede installazione
 di dipendenze o compilazione.
 
 La pagina offre collegamenti rapidi ai numeri nazionali pubblici di emergenza e
-ascolto e funzioni dimostrative che restano nella scheda corrente. La dimensione
-del testo si può regolare su tre livelli e torna allo standard quando si ricarica
-la pagina. L'uscita rapida mostra una pagina vuota ma non cancella la cronologia
-del browser.
+ascolto e funzioni dimostrative che restano nella scheda corrente. Le tre aree
+di supporto includono azioni verso la chat dimostrativa o le informazioni sulla
+community; non rappresentano servizi attivi. La dimensione del testo si può
+regolare su tre livelli e torna allo standard quando si ricarica la pagina.
+L'uscita rapida mostra una pagina vuota ma non cancella la cronologia del browser.
 
 La chat interna mostra risposte predefinite in locale. Non è collegata a un
 modello IA, a un operatore o ad altri utenti, non accetta testo libero e non

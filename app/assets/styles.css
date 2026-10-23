@@ -729,6 +729,30 @@ h2 em {
   line-height: 1.7;
 }
 
+.card-action {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: auto;
+  padding: 0.5rem 0;
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration-color: rgba(24, 59, 53, 0.35);
+  text-underline-offset: 4px;
+}
+
+.card-action:hover {
+  color: #9d503b;
+  text-decoration-color: currentColor;
+}
+
+.card-action:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 4px;
+}
+
 .card-status {
   margin-top: auto;
   padding: 0.35rem 0.65rem;
