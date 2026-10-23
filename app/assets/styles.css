@@ -2337,6 +2337,290 @@ html {
   .brand-copy > span {
     display: none;
   }
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 92% 8%, rgba(240, 201, 110, 0.2), transparent 24rem),
+    radial-gradient(ellipse at 3% 42%, rgba(231, 139, 105, 0.1), transparent 26rem),
+    #f2f4f1;
+}
+
+.site-header {
+  box-shadow: 0 5px 24px rgba(24, 59, 53, 0.045);
+}
+
+.brand-mark {
+  background: linear-gradient(145deg, #f5d58b 0 47%, #dfe8dc 48% 100%);
+}
+
+.app-status {
+  background: #fff0dc;
+}
+
+.app-status > span {
+  background: #d47750;
+  box-shadow: 0 0 0 4px rgba(212, 119, 80, 0.12);
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-color: rgba(24, 59, 53, 0.08);
+  background:
+    radial-gradient(ellipse at 84% 15%, rgba(240, 201, 110, 0.23), transparent 15rem),
+    linear-gradient(125deg, #fffefa 0%, #fffefa 48%, #f8eee2 100%);
+  box-shadow: 0 22px 55px rgba(75, 66, 42, 0.09);
+}
+
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  right: -5.5rem;
+  bottom: -10rem;
+  width: 23rem;
+  aspect-ratio: 1;
+  border: 1px solid rgba(199, 120, 89, 0.2);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 2.5rem rgba(199, 120, 89, 0.035),
+    0 0 0 5rem rgba(199, 120, 89, 0.025);
+  content: "";
+}
+
+.hero-art {
+  border: 1px solid rgba(24, 59, 53, 0.08);
+  box-shadow: 0 18px 40px rgba(65, 78, 58, 0.12);
+  transform: rotate(1.5deg);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.hero .eyebrow {
+  width: fit-content;
+  padding: 0.48rem 0.8rem;
+  border-radius: 99px;
+  background: #f8e8d9;
+  color: #824f3b;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 em {
+  color: #bd684d;
+}
+
+.hero-note {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 99px;
+  background: #edf2e8;
+}
+
+.approach {
+  border-color: transparent;
+  border-radius: 1.5rem 1.5rem 1.5rem 0.35rem;
+  background: linear-gradient(125deg, #e4eee3, #f0f1e8);
+}
+
+.support {
+  background: linear-gradient(135deg, #e2ece0 0%, #eff0e5 55%, #f7e8db 100%);
+}
+
+.support-card {
+  overflow: hidden;
+  border-color: rgba(24, 59, 53, 0.08);
+  border-radius: 1.45rem 1.45rem 1.45rem 0.45rem;
+  box-shadow: 0 8px 20px rgba(24, 59, 53, 0.055);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.support-card::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: #d98162;
+  content: "";
+}
+
+.support-card:nth-child(2)::before {
+  background: #a1aa61;
+}
+
+.support-card:nth-child(3)::before {
+  background: #9b80a9;
+}
+
+.support-card:nth-child(2) {
+  background: #fffdf5;
+}
+
+.support-card:nth-child(3) {
+  background: #fffaf8;
+}
+
+.card-number {
+  color: #9e6046;
+}
+
+.support-card:nth-child(2) .card-number {
+  color: #68713d;
+}
+
+.support-card:nth-child(3) .card-number {
+  color: #755e83;
+}
+
+.assistant-card {
+  border-color: rgba(24, 59, 53, 0.07);
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(223, 232, 220, 0.7), transparent 26rem),
+    var(--white);
+  box-shadow: 0 16px 36px rgba(24, 59, 53, 0.075);
+}
+
+.assistant-avatar {
+  background: linear-gradient(145deg, #f4cf80, #e7a080);
+  box-shadow: 0 0 0 6px rgba(240, 201, 110, 0.16);
+}
+
+.assistant-actions button {
+  border-color: rgba(24, 59, 53, 0.14);
+  box-shadow: 0 3px 10px rgba(24, 59, 53, 0.04);
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.assistant-actions button:hover,
+.assistant-actions button:focus-visible {
+  background: #f7e7d5;
+  box-shadow: 0 5px 14px rgba(24, 59, 53, 0.1);
+  transform: translateY(-2px);
+}
+
+.next-steps {
+  border-color: rgba(24, 59, 53, 0.06);
+  background: linear-gradient(145deg, #fffefa, #f3f5ec);
+}
+
+.tool-card {
+  border-color: rgba(24, 59, 53, 0.08);
+  border-radius: 1.4rem 1.4rem 1.4rem 0.45rem;
+  box-shadow: 0 8px 22px rgba(24, 59, 53, 0.045);
+}
+
+.feature-status {
+  border-radius: 1rem 1rem 1rem 0.3rem;
+  background: #fffefa;
+}
+
+.faq-section {
+  background: linear-gradient(125deg, #e8eee4, #f5ebe1);
+}
+
+.faq-item {
+  border-color: rgba(24, 59, 53, 0.1);
+  background: rgba(255, 254, 250, 0.88);
+}
+
+.faq-item[open] {
+  border-color: rgba(189, 104, 77, 0.32);
+  box-shadow: 0 8px 22px rgba(24, 59, 53, 0.06);
+}
+
+.community {
+  border-radius: 1.5rem 1.5rem 0.4rem 1.5rem;
+  background: linear-gradient(130deg, #fff8f1, #f5e7e3);
+}
+
+.community-open {
+  box-shadow: 0 8px 18px rgba(24, 59, 53, 0.14);
+}
+
+.closing {
+  position: relative;
+  overflow: hidden;
+  border-color: transparent;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(240, 201, 110, 0.2), transparent 13rem),
+    linear-gradient(125deg, #214a40, #183b35 72%);
+  color: #fffefa;
+}
+
+.closing::after {
+  position: absolute;
+  right: -3rem;
+  bottom: -8rem;
+  width: 18rem;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 254, 250, 0.2);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 2rem rgba(255, 254, 250, 0.035),
+    0 0 0 4rem rgba(255, 254, 250, 0.025);
+  content: "";
+  pointer-events: none;
+}
+
+.closing .eyebrow,
+.closing > p:not(.eyebrow) {
+  color: rgba(255, 254, 250, 0.78);
+}
+
+.closing h2 {
+  color: #fffefa;
+}
+
+.closing-mark {
+  background: #f0c96e;
+}
+
+.button-light {
+  border-color: #fffefa;
+  background: #fffefa;
+  color: var(--ink);
+}
+
+.button-light:hover,
+.button-light:focus-visible {
+  border-color: #f0c96e;
+  background: #f0c96e;
+  color: var(--ink);
+}
+
+.contact {
+  background: linear-gradient(125deg, #eef2e9, #fffefa);
+}
+
+.app-nav {
+  border-color: rgba(24, 59, 53, 0.08);
+  box-shadow: 0 12px 38px rgba(24, 59, 53, 0.2);
+}
+
+.app-nav a[aria-current="page"] {
+  background: #f6e6d4;
+  color: #704732;
+}
+
+@media (hover: hover) {
+  .hero:hover .hero-art {
+    box-shadow: 0 22px 46px rgba(65, 78, 58, 0.16);
+    transform: rotate(0);
+  }
+
+  .support-card:hover {
+    box-shadow: 0 16px 30px rgba(24, 59, 53, 0.12);
+    transform: translateY(-5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-art,
+  .support-card,
+  .assistant-actions button {
+    transition: none;
+  }
 
   .brand-mark {
     width: 36px;
