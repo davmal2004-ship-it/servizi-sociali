@@ -203,6 +203,13 @@
             <span class="tool-index">La tua riservatezza</span>
             <h3 id="profile-title">Scegli come usare questa pagina</h3>
             <p>Non serve creare un account. La preferenza vale solo finché tieni aperta questa scheda: non viene inviata né salvata.</p>
+            <fieldset class="reading-size-control" aria-describedby="reading-size-status">
+              <legend>Dimensione del testo</legend>
+              <label><input type="radio" name="reading-size" value="standard" checked> Standard</label>
+              <label><input type="radio" name="reading-size" value="large"> Grande</label>
+              <label><input type="radio" name="reading-size" value="larger"> Molto grande</label>
+            </fieldset>
+            <p class="profile-status" id="reading-size-status" aria-live="polite">Dimensione del testo: standard.</p>
             <label class="toggle-row" for="anonymous-mode">
               <span><strong>Modalità anonima</strong><small>Nessun nickname mostrato.</small></span>
               <input id="anonymous-mode" type="checkbox" checked>

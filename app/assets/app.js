@@ -1,4 +1,5 @@
 const anonymousMode = document.querySelector("#anonymous-mode");
+const readingSizeStatus = document.querySelector("#reading-size-status");
 const nicknameField = document.querySelector("#nickname-field");
 const nicknameInput = document.querySelector("#nickname");
 const profileStatus = document.querySelector("#profile-status");
@@ -135,6 +136,22 @@ function updateProfile() {
     ? `Nickname attivo in questa scheda: ${nickname}.`
     : "Modalità nickname attiva. Scegli un nome facoltativo.";
 }
+
+document.querySelectorAll('input[name="reading-size"]').forEach((option) => {
+  option.addEventListener("change", () => {
+    if (!option.checked) {
+      return;
+    }
+
+    if (option.value === "standard") {
+      document.documentElement.removeAttribute("data-text-size");
+    } else {
+      document.documentElement.dataset.textSize = option.value;
+    }
+    const label = option.labels[0].textContent.trim();
+    readingSizeStatus.textContent = `Dimensione del testo: ${label.toLowerCase()}.`;
+  });
+});
 
 function renderReminders() {
   reminderList.replaceChildren();

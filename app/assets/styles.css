@@ -798,6 +798,55 @@ h2 em {
   font-size: 0.86rem;
 }
 
+.reading-size-control {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.reading-size-control legend {
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.reading-size-control label {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.76rem;
+  text-align: center;
+}
+
+.reading-size-control input {
+  flex: 0 0 auto;
+  accent-color: var(--ink);
+}
+
+.reading-size-control input:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 2px;
+}
+
+html[data-text-size="large"] {
+  font-size: 112.5%;
+}
+
+html[data-text-size="larger"] {
+  font-size: 125%;
+}
+
 .toggle-row {
   display: flex;
   align-items: center;
