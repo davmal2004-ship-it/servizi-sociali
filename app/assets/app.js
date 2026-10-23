@@ -12,6 +12,7 @@ const navMenu = document.querySelector(".nav-menu");
 const communityDialog = document.querySelector("#community-dialog");
 const communityDialogOpener = document.querySelector("#open-community-dialog");
 const communityDialogCloser = document.querySelector("#close-community-dialog");
+const communityDialogTimeout = 12_000;
 const compactNavigation = window.matchMedia("(max-width: 900px)");
 const reminders = [];
 const appNavigationLinks = [...document.querySelectorAll("[data-app-nav]")];
@@ -197,13 +198,37 @@ if ("IntersectionObserver" in window) {
   }
 }
 
+function openCommunityDialog() {
+  if (communityDialog.open) {
+    return;
+  }
+
+  communityDialog.showModal();
+  scheduleCommunityDialogClose();
+}
+
+let communityDialogCloseTimer;
+let communityDialogAutoOpenTimer;
+function scheduleCommunityDialogClose() {
+  window.clearTimeout(communityDialogCloseTimer);
+  communityDialogCloseTimer = window.setTimeout(() => {
+    communityDialog.close();
+  }, communityDialogTimeout);
+}
+
 safeExitButton.addEventListener("click", () => {
   window.location.replace("about:blank");
 });
 safeExitButton.hidden = false;
 
 communityDialogOpener.addEventListener("click", () => {
-  communityDialog.showModal();
+  window.clearTimeout(communityDialogAutoOpenTimer);
+  openCommunityDialog();
+});
+communityDialog.addEventListener("pointerdown", scheduleCommunityDialogClose);
+communityDialog.addEventListener("keydown", scheduleCommunityDialogClose);
+communityDialog.addEventListener("close", () => {
+  window.clearTimeout(communityDialogCloseTimer);
 });
 communityDialogCloser.addEventListener("click", () => {
   communityDialog.close();
@@ -213,6 +238,7 @@ communityDialog.addEventListener("click", (event) => {
     communityDialog.close();
   }
 });
+communityDialogAutoOpenTimer = window.setTimeout(openCommunityDialog, 800);
 
 function updateReminderDateMinimum() {
   const today = new Date();

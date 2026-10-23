@@ -303,16 +303,16 @@
           <button class="button button-primary community-open" id="open-community-dialog" type="button" aria-haspopup="dialog">
             Chat tra persone <span aria-hidden="true">↗</span>
           </button>
-          <p class="muted">La chat interna non è attiva. Apri i dettagli per consultare l'invito esterno.</p>
+          <p class="muted">La chat interna non è attiva. Il popup informativo si chiude da solo dopo 12 secondi; puoi riaprirlo qui.</p>
         </div>
       </section>
 
-      <dialog class="peer-chat-dialog" id="community-dialog" aria-labelledby="community-dialog-title">
+      <dialog class="peer-chat-dialog" id="community-dialog" aria-labelledby="community-dialog-title" aria-describedby="community-dialog-description">
         <div class="peer-chat-card">
           <button class="dialog-close" id="close-community-dialog" type="button" aria-label="Chiudi il popup">×</button>
           <span class="peer-chat-status"><span aria-hidden="true"></span> Non attiva</span>
           <h2 id="community-dialog-title">Chat tra persone</h2>
-          <p>La chat interna tra utenti non è attiva. L'invito qui sotto porta a un gruppo WhatsApp esterno a questa app. Prima di entrare, verifica chi lo gestisce e ricorda che gli altri partecipanti potrebbero vedere il tuo numero e i tuoi messaggi. Evita di condividere dati personali o informazioni delicate.</p>
+          <p id="community-dialog-description">La chat interna tra utenti non è attiva. L'invito qui sotto porta a un gruppo WhatsApp esterno a questa app. Prima di entrare, verifica chi lo gestisce e ricorda che gli altri partecipanti potrebbero vedere il tuo numero e i tuoi messaggi. Evita di condividere dati personali o informazioni delicate.</p>
           <a
             class="peer-chat-link"
             href="https://chat.whatsapp.com/KJi2Io4ETdDKLx8pp291DD"

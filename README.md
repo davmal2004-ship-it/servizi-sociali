@@ -17,8 +17,11 @@ rapida mostra una pagina vuota ma non cancella la cronologia del browser.
 La chat interna mostra risposte predefinite in locale. Non è collegata a un
 modello IA, a un operatore o ad altri utenti, non accetta testo libero e non
 fornisce consulenza professionale. La chat interna tra utenti non è attiva. La
-community include un link WhatsApp esterno fornito dall'utente: verifica chi
-gestisce il gruppo prima di unirti e non condividere informazioni sensibili.
+community include un popup informativo che appare all'apertura e si chiude dopo
+12 secondi di inattività. Si può chiudere con il pulsante, il tasto Esc o un
+clic fuori dal popup, oppure riaprire dalla sezione community. Il link WhatsApp
+esterno è stato fornito dall'utente: verifica chi gestisce il gruppo prima di
+unirti e non condividere informazioni sensibili.
 
 Moduli per inviare o tracciare richieste, notifiche, dati territoriali, annunci
 e community sono indicati come non ancora attivi: richiedono un ente responsabile,
